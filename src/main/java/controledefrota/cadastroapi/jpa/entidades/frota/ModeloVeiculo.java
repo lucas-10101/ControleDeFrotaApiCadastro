@@ -9,12 +9,12 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "motoristas")
-public class Motorista {
+@Table(name = "modelos_veiculo")
+public class ModeloVeiculo { // TODO changelog
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
 
-	private String nome;
+	private String descricao;
 }

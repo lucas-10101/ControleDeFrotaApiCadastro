@@ -8,7 +8,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: id
-                  type: int
+                  type: smallint
                   autoIncrement: true
                   startWith: 0
                   incrementBy: 1
@@ -20,3 +20,48 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     unique: true
+              - column:
+                  name: codigo_interno
+                  type: varchar(12)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: numero_eixos
+                  type: smallint
+              - column:
+                  name: ano_fabricacao
+                  type: smallint
+              - column:
+                  name: ano_modelo
+                  type: smallint
+              - column:
+                  name: chassi
+                  type: varchar(17)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: id_marca_veiculo
+                  type: smallint
+                  constraints:
+                    foreignKeyName: fk_veiculos_marcas_veiculo
+                    referencedTableName: marcas_veiculo
+                    referencedColumnNames: id
+              - column:
+                  name: id_modelo_veiculo
+                  type: smallint
+                  constraints:
+                    foreignKeyName: fk_veiculos_modelos_veiculo
+                    referencedTableName: modelos_veiculo
+                    referencedColumnNames: id
+              - column:
+                  name: id_tipo_veiculo
+                  type: smallint
+                  constraints:
+                    foreignKeyName: fk_veiculos_tipos_veiculo
+                    referencedTableName: tipos_veiculo
+                    referencedColumnNames: id
+                  
+                  
+                  

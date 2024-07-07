@@ -9,12 +9,12 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "motoristas")
-public class Motorista {
+@Table(name = "tipos_veiculo")
+public class TipoVeiculo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
 
-	private String nome;
+	private String descricao;
 }

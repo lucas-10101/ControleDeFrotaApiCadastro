@@ -6,6 +6,12 @@ databaseChangeLog:
   - include:
       file: /db/changelog/v1.0.0/filiais.yaml
   - include:
+      file: /db/changelog/v1.0.0/marcas_veiculo.yaml
+  - include:
+      file: /db/changelog/v1.0.0/modelos_veiculo.yaml
+  - include:
+      file: /db/changelog/v1.0.0/tipos_veiculos.yaml
+  - include:
       file: /db/changelog/v1.0.0/veiculos.yaml
       
   - changeSet:
