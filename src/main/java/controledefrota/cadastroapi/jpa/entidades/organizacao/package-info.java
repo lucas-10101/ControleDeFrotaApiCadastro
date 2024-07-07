@@ -1,0 +1,1 @@
+package controledefrota.cadastroapi.jpa.entidades.organizacao;

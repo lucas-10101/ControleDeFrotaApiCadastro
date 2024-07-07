@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: filiais
+      author: lucas-10101
+      changes:
+        - createTable:
+            tableName: filiais
+            columns:
+              - column:
+                  name: id
+                  type: smallint
+                  autoIncrement: true
+                  startWith: 0
+                  incrementBy: 1
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: razao_social
+                  type: varchar(128)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: nome_fantasia
+                  type: varchar(128)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cnpj
+                  type: varchar(14)
+                  constraints:
+                    nullable: false

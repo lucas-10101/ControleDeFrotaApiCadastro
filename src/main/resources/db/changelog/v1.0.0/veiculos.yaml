@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: veiculos
+      author: lucas-10101
+      changes:
+        - createTable:
+            tableName: veiculos
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  startWith: 0
+                  incrementBy: 1
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: placa
+                  type: varchar(8)
+                  constraints:
+                    nullable: false
+                    unique: true

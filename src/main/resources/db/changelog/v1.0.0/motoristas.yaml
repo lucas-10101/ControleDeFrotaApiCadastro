@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: motoristas
+      author: lucas-10101
+      changes:
+        - createTable:
+            tableName: motoristas
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  startWith: 0
+                  incrementBy: 1
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: nome
+                  type: varchar(128)
+                  constraints:
+                    nullable: false
